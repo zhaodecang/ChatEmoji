@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDBDE"/>
+    <!--第三行：回复、表情、发送-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--回复-->
+        <EditText
+            android:id="@+id/ed_replay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/replay_et_bg"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textSize="18sp"/>
+        <!--表情-->
+        <ImageButton
+            android:id="@+id/ib_emoji"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_emoji_selector"/>
+        <!--发送-->
+        <ImageButton
+            android:id="@+id/ib_send"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/biz_chat_comment_send"/>
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA"/>
+
+    <include layout="@layout/chat_face_container"/>
+</LinearLayout>

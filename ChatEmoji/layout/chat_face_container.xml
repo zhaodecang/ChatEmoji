@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_chat_emoji"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <!--用于展示表情数据-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/emoji_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA"/>
+    <!--表情面板的选择按钮-->
+    <LinearLayout
+        android:id="@+id/emoji_controller"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_qq_face"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QQ表情"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tv_emoji_face"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Emoji表情"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/btn_del"/>
+    </LinearLayout>
+
+</LinearLayout>
